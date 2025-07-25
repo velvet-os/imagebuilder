@@ -2,6 +2,7 @@
 
 ## bootable sd card images
 
+- https://github.com/velvet-os/imagebuilder-testimages/releases/tag/mixed-testimages-01 (experimental testimage)
 - https://github.com/velvet-os/imagebuilder/releases/tag/230109-01 (experimental)
 - https://github.com/velvet-os/imagebuilder/releases/tag/220710-01
 
@@ -35,6 +36,7 @@
 
 ## special notes
 
+- the experimental testimage is ment as a starting point for people who want to help bringing support for this system forward, it has missing features and bugs etc. and should not be considered fully daily useable
 - this is just some initial draft to support this system without having the actual hardware - in case someone wants to donate the hardware to me, please let me know :)
 - this is still very much wip and untested, things might work or might not work
 - as long as the chromeos kernel is used there is no gpu support
