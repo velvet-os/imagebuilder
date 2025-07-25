@@ -2,6 +2,7 @@
 
 ## bootable sd card images
 
+- https://github.com/velvet-os/imagebuilder-testimages/releases/tag/spring-release-2025-testimages-round-04 (testimage)
 - https://github.com/velvet-os/imagebuilder/releases/tag/240521-01
 
 ## tested systems - working
