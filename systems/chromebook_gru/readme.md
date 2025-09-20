@@ -17,7 +17,7 @@
 
 ## untested systems
 
-- asus chromebook tablet ct100 - maybe scarlet too?
+- asus chromebook tablet ct100 - dumo
 
 ## generic mainline linux on arm chromebook notes
 
