@@ -31,10 +31,7 @@
 
 ## kernel build notes
 
-- https://github.com/hexdump0815/linux-mainline-mediatek-mt81xx-kernel/blob/master/readme.mt9
-  - based on the chromeos kernel mainline integration tree for the mediatek chromebooks at collabora
-- https://github.com/hexdump0815/linux-chromeos-kernel/blob/master/readme.col
-  - a chromeos based kernel is used until mainline gets useable on this device
+- https://github.com/hexdump0815/linux-mainline-mediatek-mt81xx-kernel/blob/master/readme.cbm
 
 ## mesa build notes
 
@@ -42,15 +39,30 @@
 
 ## priority
 
-- experimental mode
+- medium: will be worked on and improved from time to time
 
 ## special notes
 
-- this is just some experimental initial draft to support this system in some
-  way
-- this is still very much wip and untested, things might work or might not work
-- as long as the chromeos kernel is used there is no gpu support and other
-  stuff might also not work
+- most things seem to work more or less with the mainline kernel meanwhile
+- by default sound is disabled as multiple people reported strange noises on
+  bootup. to enable audio on corsola devices, please do the following steps as
+root:
+    ```
+    mv /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10.off /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10
+    mv /usr/share/alsa/ucm2/sof-mt8186_rt10.off /usr/share/alsa/ucm2/sof-mt8186_rt10
+    alsaucm -c sof-mt8186_rt10 reload
+    ```
+  and then as the normal user:
+    ```
+    systemctl --user restart pipewire wireplumber pipewire-pulse
+    ```
+  audio should work afterwards. also, you may need to initialize the
+SectionDevice manually once (only one time) to make pulseaudio finds them
+properly, same for Headphone and InternalMic:
+    ```
+    alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev Speaker
+    alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev InternalMic
+    ```
 - it looks like (at least the initial batch of) corsola chromebooks is a bit
   buggy when trying to switch into developer mode and seems to hang there, so
 either an update has to be done first or they have to be restored from the

@@ -25,6 +25,8 @@
 
 ## kernel build notes
 
+- https://github.com/hexdump0815/linux-mainline-mediatek-mt81xx-kernel/blob/master/readme.cbm
+  - the mainline kernel meanwhile supports the hardware quite well
 - https://github.com/hexdump0815/linux-mainline-mediatek-mt81xx-kernel/blob/master/readme.mt9
   - based on the chromeos kernel mainline integration tree for the mt819x chromebooks at collabora
 - https://github.com/hexdump0815/linux-chromeos-kernel/blob/master/readme.chr
