@@ -5,3 +5,16 @@ Also, you may need to initialize the SectionDevice manually once (only one time)
 alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev Speaker
 alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev InternalMic
 ```
+
+By default this config is diabled as multiple people reported strange noises on bootup.
+To enable audio on corsola devices, please do the following steps as root:
+```
+mv /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10.off /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10
+mv /usr/share/alsa/ucm2/sof-mt8186_rt10.off /usr/share/alsa/ucm2/sof-mt8186_rt10
+alsaucm -c sof-mt8186_rt10 reload
+```
+and then as the normal user:
+```
+systemctl --user restart pipewire wireplumber pipewire-pulse
+```
+Audio should work afterwards.
