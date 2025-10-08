@@ -1,0 +1,21 @@
+Based on https://chromium.googlesource.com/chromiumos/overlays/board-overlays/+/HEAD/overlay-corsola/chromeos-base/chromeos-bsp-corsola/files/magneton/audio/ucm-config/
+
+(note: running the commands below requires you to reboot pulseaudio/pipewire otherwise audio wont work in my testing)
+Also, you may need to initialize the SectionDevice manually once (only one time) to make pulseaudio finds them properly, same for Headphone and InternalMic.
+```
+alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev Speaker
+alsaucm  -c sof-mt8186_rt10 set _verb HiFi set _enadev InternalMic
+```
+
+By default this config is diabled as multiple people reported strange noises on bootup.
+To enable audio on corsola devices, please do the following steps as root:
+```
+mv /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10.off /usr/share/alsa/ucm2/conf.d/sof-mt8186_rt10
+mv /usr/share/alsa/ucm2/sof-mt8186_rt10.off /usr/share/alsa/ucm2/sof-mt8186_rt10
+alsaucm -c sof-mt8186_rt10 reload
+```
+and then as the normal user:
+```
+systemctl --user restart pipewire wireplumber pipewire-pulse pulseaudio
+```
+Audio should work afterwards.
