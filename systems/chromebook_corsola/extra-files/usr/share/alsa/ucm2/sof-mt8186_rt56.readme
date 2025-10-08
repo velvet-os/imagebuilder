@@ -1,4 +1,4 @@
-Based on https://chromium.googlesource.com/chromiumos/overlays/board-overlays/+/HEAD/overlay-corsola/chromeos-base/chromeos-bsp-corsola/files/magneton/audio/ucm-config/
+Based on https://chromium.googlesource.com/chromiumos/overlays/board-overlays/+/HEAD/overlay-corsola/chromeos-base/chromeos-bsp-corsola/files/voltorb/audio/ucm-config/
 
 (note: running the commands below requires you to reboot pulseaudio/pipewire otherwise audio wont work in my testing)
 Also, you may need to initialize the SectionDevice manually once (only one time) to make pulseaudio finds them properly, same for Headphone and InternalMic.
