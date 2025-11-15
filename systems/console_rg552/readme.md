@@ -2,7 +2,7 @@
 
 ## bootable sd card images
 
-- not available now
+- https://github.com/velvet-os/imagebuilder-testimages/releases/tag/autumn-release-2025-testimages (experimental testimage)
 
 ## tested systems - working
 
