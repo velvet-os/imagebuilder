@@ -41,5 +41,5 @@
 ## special notes
 
 - most things seem to work more or less
-- there is no gpu acceleration as there is no open source driver available for the powervr gpu in the mt8173 soc, mesa software rendering is used instead for opengl etc.
+- there is no gpu acceleration as there is no open source driver available for the powervr gpu in the mt8173 soc, mesa software rendering is used instead for opengl etc. UPDATE: There has been an Open source GPU driver released (https://blog.imaginationtech.com/open-source-graphics-driver-adds-vulkan-1.2-support-and-additional-gpus#:~:text=Since%20then%2C%20our%20engineering%20team,functional%20open-source%20Vulkan%20driver).
 - when booting from an usb medium the bootup might hang waiting to discover the root device - in such cases it might help to shortly unplug and replug the usb medium the system is booted from
