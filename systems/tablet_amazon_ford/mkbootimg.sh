@@ -8,4 +8,4 @@
 
 cd ${2}/boot
 
-mkbootimg --kernel zImage-${1} --ramdisk initrd.img-${1} --cmdline 'bootopt=64S3,32N2,32N2 init=/sbin/init console=tty0 root=LABEL=rootpart rootwait ro fsck.repair=yes net.ifnames=0 ipv6.disable=1' --base 0x80000000 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --second_offset 0x00f00000 --tags_offset 0x00000100 --pagesize 2048 -o boot.img-${1}
+mkbootimg --kernel zImage-${1} --ramdisk initrd.img-${1} --cmdline 'bootopt=64S3,32N2,32N2 init=/sbin/init console=tty0 root=LABEL=rootpart rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0' --base 0x80000000 --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --second_offset 0x00f00000 --tags_offset 0x00000100 --pagesize 2048 -o boot.img-${1}

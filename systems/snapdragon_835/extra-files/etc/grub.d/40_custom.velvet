@@ -15,7 +15,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - asus novago tp370ql' --class debian
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/msm8998-asus-novago-tp370ql.dtb
 	echo	'Loading initial ramdisk ...'
@@ -33,7 +33,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - hp envy x2' --class debian --class 
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/msm8998-hp-envy-x2.dtb
 	echo	'Loading initial ramdisk ...'
@@ -51,7 +51,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - lenovo miix 630' --class debian --c
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0 module_blacklist=evbug efi=novamap clk_ignore_unused pd_ignore_unused deferred_probe_timeout=30
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/msm8998-lenovo-miix-630.dtb
 	echo	'Loading initial ramdisk ...'

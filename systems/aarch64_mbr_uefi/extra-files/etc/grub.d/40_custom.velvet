@@ -15,7 +15,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - amlogic gxl s905x and s905w tv box'
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/meson-gxl-s905w-p281.dtb
 	echo	'Loading initial ramdisk ...'
@@ -33,7 +33,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - amlogic gxl s905x tv box' --class d
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/meson-gxl-s905x-p212.dtb
 	echo	'Loading initial ramdisk ...'
@@ -51,7 +51,7 @@ menuentry 'Debian GNU/Linux KERNEL_VERSION - amlogic gxm s912 tv box' --class de
 	  search --no-floppy --fs-uuid --set=root BOOT_UUID
 	fi
 	echo	'Loading Linux KERNEL_VERSION ...'
-	linux	/Image-KERNEL_VERSION root=UUID=ROOT_UUID rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0
+	linux	/Image-KERNEL_VERSION console=tty0 root=UUID=ROOT_UUID rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0
 	echo	'Loading device-tree' 
 	devicetree /dtb-KERNEL_VERSION/meson-gxm-q200.dtb
 	echo	'Loading initial ramdisk ...'

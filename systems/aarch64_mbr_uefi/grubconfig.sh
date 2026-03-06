@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add some extra options to the kernel cmdline - not used yet
-sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="rootwait ro console=tty0 fsck.repair=yes net.ifnames=0 ipv6.disable=1 noresume apparmor=0"/g' /etc/default/grub
+sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="console=tty0 rootwait ro fsck.fix=yes fsck.repair=yes net.ifnames=0 noresume apparmor=0"/g' /etc/default/grub
 # do not boot any dtb entry automatically - the user has to decide according to the device used
 sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=-1/g' /etc/default/grub
 
