@@ -6,11 +6,9 @@
 
 ## System specific information and images :
 
-- banana pi m1 and allwinner h3 tv boxes: https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h3/readme.md
 - allwinner h6 devices and tv boxes: https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h6/readme.md
 - allwinner h616 devices and tv boxes: https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h616/readme.md (wip)
 - amlogic gx (gxbb=s905, gxl=s905x/s905w, gxm=s912, g12a=s905x2, g12b=s922x and sm1=s905x3) devices and tv boxes: https://github.com/velvet-os/imagebuilder/blob/main/systems/amlogic_gx/readme.md
-- amlogic m8 (s802, s805 and s812) devices and tv boxes: https://github.com/velvet-os/imagebuilder/blob/main/systems/amlogic_m8/readme.md
 - intel 64bit atom (z3735f, z3470d, z8300, z8350 etc.) systems (often tablets) with 32bit uefi bios: https://github.com/velvet-os/imagebuilder/blob/main/systems/atom_x86_with_32bit_uefi/readme.md
 - arm exynos 5250 32bit chromebooks snow: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_snow/readme.md
 - arm exynos 5420/5800 32bit chromebooks peach: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_peach/readme.md
@@ -42,8 +40,3 @@
 - samsung galaxy tab a 9.7 gt510 msm8916 tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_samsung_gt510/readme.md (wip)
 - motorola moto g4 play msm8916 phones: https://github.com/velvet-os/imagebuilder/blob/main/systems/phone_motorola_harpia/readme.md (wip)
 - samsung galaxy a52 and a72 sm7125 phones: https://github.com/velvet-os/imagebuilder/blob/main/systems/phone_samsung_a72q/readme.md (wip)
-- amazon ford tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_amazon_ford/readme.md (legacy, on hold)
-- amazon austin tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_amazon_austin/readme.md (legacy, on hold)
-- amazon giza tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_amazon_giza/readme.md (legacy, on hold)
-- amazon douglas tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_amazon_douglas/readme.md (legacy, on hold)
-- amazon suez tablets: https://github.com/velvet-os/imagebuilder/blob/main/systems/tablet_amazon_suez/readme.md (legacy, on hold)
