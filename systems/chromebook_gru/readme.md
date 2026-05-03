@@ -14,10 +14,7 @@
 
 - asus chromebook flip c101p - bob
 - samsung chromebook plus xe513c24 - kevin
-- acer chromebook tab 10 - scarlet (wip)
-
-## untested systems
-
+- acer chromebook tab 10 - scarlet
 - asus chromebook tablet ct100 - dumo
 
 ## generic mainline linux on arm chromebook notes
