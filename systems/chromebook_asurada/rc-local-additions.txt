@@ -2,7 +2,7 @@
 # this should no longer be required as deep suspend seems to work properly now
 #echo s2idle > /sys/power/mem_sleep
 
-# on some corsola systems suspend does not seem to work properly with the symptom
+# on some asurada systems suspend does not seem to work properly with the symptom
 # that they will wake up again after a few seconds after being put into suspend
 # in those cases uncomenting the following line and rebooting might fix the problem
 # from: https://github.com/velvet-os/imagebuilder/issues/228#issuecomment-3407825401
