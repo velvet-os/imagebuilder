@@ -61,7 +61,7 @@ see also https://github.com/velvet-os/imagebuilder/issues/79 for all above
   - in case of a lot of screen flickering in the u-boot stage there is a "-noflicker" version of the u-boot, which should show a black screen instead of the crazy flickering
 - some nyan blaze notes:
   - for the nyan blaze the same u-boot can be used as for the nyan big (depending on the memory in the system the 2gb or 4gb version)
-  - sound still needs a bit of config work, but in principle it can be made working
+  - sound output can be enabled as described here: https://github.com/velvet-os/imagebuilder/issues/379#issuecomment-3587798973
 - on the u-boot prompt there are three possible options:
   - 1: linux-big - nyan big with the 1366x768 screen
   - 2: linux-big-fhd - nyan big with the full hd 1920x1080 screen
