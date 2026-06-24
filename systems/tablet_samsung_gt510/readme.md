@@ -32,6 +32,7 @@
 - this is not very useable yet, still in a very early and experimental phase
 - the lte models of those tablets have 2gb or ram and the wifi ones only 1.5gb
 - to install write the image to an sd card and install lk2nd-msm8916.img from https://github.com/msm8916-mainline/lk2nd/releases via the instructions in https://github.com/msm8916-mainline/lk2nd/blob/master/README.md
+- it looks like not all lk2nd versions are working well - the newer versions from 17.0 on seem to not boot properly from sd card anymore (always only booting into fastboot mode) but the older versions up to 0.16.0 version seem to be working (tested with v0.16.0 on gt510)
 - a1 rated sd cards are highly recommended as otherwise the performance will be bad due to bad random disk io
 - it looks like those devices will not run from all kinds of sd cards, so in case of a non booting device trying a different sd card might be worth a try (known to be working: sandisk ultra a1 32gb)
 - for some reason at least once the firmware loading for wifi did not work after the first boot, after rebooting it worked
@@ -44,3 +45,4 @@
 - suspend via s2idle mode seems to work quite well and the tablet should be able to survive more than a day in this mode - wakeup can be done via a short press on the power button or by conneting power to usb
   - sadly it seems to wake up on its own after about 30-60 minutes for yet unknown reasons
   - the whole suspend/resume topic seems to be still very fragile here as just upgrading from v5.18.1 to v5.18.10 results in suspend working the first time, but waking up immediately again at the second suspend try
+- the gpu support in newer kernel versions seems to be not that good anymore and for firefox it is recommended to disable gpu support by setting layers.acceleration.disabled to true in about:config
