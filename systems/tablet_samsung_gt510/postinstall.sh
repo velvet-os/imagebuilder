@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp -v etc/X11/xorg.conf.d.samples/11-modesetting.conf etc/X11/xorg.conf.d
+cp -v etc/X11/xorg.conf.d.samples/11-modesetting-no-glamor.conf etc/X11/xorg.conf.d
 cp -v etc/X11/xorg.conf.d.samples/31-monitor-rotate-right.conf etc/X11/xorg.conf.d
 # in case the display should not be rotated, comment out the above line and also
 # comment out the lines in /etc/udev/rules.d/90-android-touch-dev.rules
