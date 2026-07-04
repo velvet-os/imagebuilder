@@ -15,11 +15,12 @@
 
 ## kernel build notes
 
-- the regular debian/ubuntu distribution kernel is used in this case, so no kernel build required
+- https://github.com/hexdump0815/linux-mainline-and-mali-generic-stable-kernel/blob/master/readme.av8
 
 ## u-boot build notes
 
 - https://github.com/hexdump0815/u-boot-misc/blob/master/readme.gxl
+- https://github.com/hexdump0815/u-boot-misc/blob/master/readme.gxy
 
 ## priority
 
@@ -27,5 +28,7 @@
 
 ## special notes
 
-- the experimental testimage is ment as a starting point for people who want to help bringing support for this system forward, it has missing features and bugs etc. and should not be considered fully daily useable
+- the experimental testimage is ment as a starting point for people who want to
+  help bringing support for this system forward, it has missing features and
+bugs etc. and should not be considered fully daily useable
 - more coming soon

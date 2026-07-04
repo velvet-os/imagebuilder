@@ -9,7 +9,7 @@ wget -v https://github.com/hexdump0815/linux-mainline-and-mali-allwinner-h6-kern
 rm -f ${DOWNLOAD_DIR}/boot-allwinner_h616-${2}.dd
 wget -v https://github.com/hexdump0815/u-boot-misc/releases/download/${allwinner_h616_uboot_version}/boot-allwinner_h616-transpeed-8k618-t-aarch64.dd.gz -O - | gunzip -c > ${DOWNLOAD_DIR}/boot-allwinner_h616-${2}.dd
 
-# get different u-boot versions for different veyron versions to have them around
+# get different u-boot versions for different h616 systems to have them around
 rm -rf ${DOWNLOAD_DIR}/boot-extra-${1}
 mkdir -p ${DOWNLOAD_DIR}/boot-extra-${1}
 cp ${DOWNLOAD_DIR}/boot-allwinner_h616-${2}.dd ${DOWNLOAD_DIR}/boot-extra-${1}/boot-allwinner_h616-transpeed-8k618-t-aarch64.dd
