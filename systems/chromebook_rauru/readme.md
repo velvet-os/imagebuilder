@@ -32,3 +32,4 @@
 - this is still very much wip and not well tested, things might work or might not work
 - as long as the chromeos kernel is used there is no gpu support
 - sound is intentionally not working to avoid accidently breaking the audio hardware
+- there is a github issue for sharing information, progress, patches, etc. for anyone actively working on bringing the support for those rauru chromebooks forward at: https://github.com/velvet-os/imagebuilder/issues/449

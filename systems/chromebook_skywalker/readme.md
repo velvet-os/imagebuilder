@@ -2,7 +2,7 @@
 
 ## bootable sd card images
 
-- none yet
+- https://github.com/velvet-os/imagebuilder-testimages/releases/tag/skywalker-legacy-testimage (experimental testimage)
 
 ## tested systems - working
 
@@ -34,3 +34,4 @@
 - sound is intentionally not working to avoid accidently breaking the audio hardware
 - one sound module had to be disabled via modprobe.d as it hard crashed the kernel later in the boot process
 - the intenal keyboard does not work properly (many keys are wrong), but an external usb keyboard works
+- there is a github issue for sharing information, progress, patches, etc. for anyone actively working on bringing the support for those skywalker chromebooks forward at: https://github.com/velvet-os/imagebuilder/issues/448
