@@ -13,13 +13,13 @@
 - lenovo ideapad slim 3 (mt8186 version) - [magenton](https://github.com/velvet-os/velvet-os.github.io/blob/main/chromebooks/systems/corsola/magneton.md)
   - see also: https://github.com/velvet-os/imagebuilder/issues/228
 - asus chromebook cm14 (cm1402c) - tentacool
+- lenovo 300e gen 4 (mt8186 version) - steelix
 - acer chromebook 311 (c723/c723t) - voltorb
   - see: https://github.com/velvet-os/imagebuilder/issues/386
 
 ## untested systems
 
 - lenovo 100e gen 4 (mt8186 version) - rusty
-- lenovo 300e gen 4 (mt8186 version) - steelix
 - asus chromebook cm14 flip (cm1402f) - tentacruel
 - asus chromebook enterprise cm30 detachable (cm3001) - starmie
 - asus chromebook cz12 (cz1204c) - chinchou
