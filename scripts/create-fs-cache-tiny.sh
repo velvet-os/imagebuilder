@@ -10,7 +10,7 @@ if [ "$#" != "2" ]; then
   echo "possible arch options:"
   echo "- armv7l - 32bit"
   echo "- aarch64 - 64bit"
-  echo "- riscv64 - 64bit (wip and works only with sidriscv below)"
+  echo "- riscv64 - 64bit"
   echo ""
   echo "possible release options:"
   echo "- alpine - this is the only release option for tiny images"

@@ -22,7 +22,6 @@ if [ "$#" != "3" ]; then
   echo "- bookworm - debian bookworm (deprecated)"
   echo "- trixie - debian trixie (recommended)"
   echo "- forky - debian forky (experimental)"
-  echo "- sidriscv - debian sid (was only used for riscv64 bringup - deprecated)"
   echo "- jammy - ubuntu jammy (deprecated)"
   echo "- noble - ubuntu noble (wip)"
   echo ""

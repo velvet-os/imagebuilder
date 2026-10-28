@@ -46,10 +46,4 @@ elif [ "$1" = "forky" ]; then
   apt-get -yq remove --purge light-locker
   apt-get -yq install xfce4-screensaver
   tasksel install standard
-# special debian sid config for riscv64 as there is no useable bookworm for it yet
-elif [ "$1" = "sidriscv" ]; then
-  apt-get -yq install locales vim openssh-server ssh-askpass sudo net-tools ifupdown iputils-ping kmod less rsync u-boot-tools usbutils dosfstools mesa-utils mesa-utils-extra console-data task-xfce-desktop xserver-xorg-input-synaptics blueman firmware-linux-free firmware-linux firmware-linux-nonfree firmware-misc-nonfree firmware-brcm80211 firmware-iwlwifi firmware-intel-sound firmware-samsung firmware-libertas firmware-realtek firmware-qcom-soc firmware-atheros pulseaudio pavucontrol lvm2 cryptsetup-bin cryptsetup cryptsetup-initramfs slick-greeter btrfs-progs btrfs-compsize dialog lz4 bc plymouth plymouth-themes xserver-xorg-video-fbdev xinput rfkill curl gnome-system-tools gnome-system-monitor firmware-sof-signed git strace glmark2 pwgen fdisk gdisk libglib2.0-bin initramfs-tools tasksel network-manager
-  # temporarily disabled as its python dependency seems to be broken, to be brought back once fixed
-  # apt-get -yq install onboard
-  tasksel install standard
 fi
