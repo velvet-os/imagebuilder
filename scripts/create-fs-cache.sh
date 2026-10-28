@@ -18,10 +18,13 @@ if [ "$#" != "2" ]; then
   echo "- bookworm - debian bookworm (deprecated)"
   echo "- trixie - debian trixie (recommended)"
   echo "- forky - debian forky (experimental)"
-  echo "- jammy - ubuntu jammy (deprecated)"
-  echo "- noble - ubuntu noble (wip)"
+  # no longer mention ubuntu support as its not properly maintained anymore
+  # the ubuntu related code still remains in the tree for now in case someone
+  # wants to work on it to bring it back
+  #echo "- jammy - ubuntu jammy (deprecated)"
+  #echo "- noble - ubuntu noble (wip)"
   echo ""
-  echo "example: $0 armv7l bookworm"
+  echo "example: $0 aarch64 trixie"
   echo ""
   exit 1
 fi
