@@ -12,7 +12,7 @@ cp -v etc/X11/xorg.conf.d.samples/11-modesetting-no-glamor.conf etc/X11/xorg.con
 cp -v etc/X11/xorg.conf.d.samples/51-touchpad.conf etc/X11/xorg.conf.d
 cp -v etc/X11/xorg.conf.d.samples/31-monitor.conf etc/X11/xorg.conf.d
 
-# bookworm and trixie
+# bookworm, trixie and forky
 if [ -f etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml-enabled ]; then
   cp -v etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml-enabled etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 # jammy and noble

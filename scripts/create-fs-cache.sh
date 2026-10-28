@@ -12,11 +12,12 @@ if [ "$#" != "2" ]; then
   echo "- aarch64 - 64bit"
   echo "- i686 - 32bit"
   echo "- x86_64 - 64bit"
-  echo "- riscv64 - 64bit (only supported with trixie)"
+  echo "- riscv64 - 64bit (only supported with trixie and forky)"
   echo ""
   echo "possible release options:"
   echo "- bookworm - debian bookworm (deprecated)"
   echo "- trixie - debian trixie (recommended)"
+  echo "- forky - debian forky (experimental)"
   echo "- sidriscv - debian sid (was only used for riscv64 bringup - deprecated)"
   echo "- jammy - ubuntu jammy (deprecated)"
   echo "- noble - ubuntu noble (wip)"
@@ -141,6 +142,19 @@ if [ ! -d ${BUILD_ROOT_CACHE} ]; then
     cp ${WORKDIR}/files/trixie-${BOOTSTRAP_ARCH}-sources.list ${BUILD_ROOT_CACHE}/etc/apt/sources.list
     # parse in the proper debian version
     sed -i "s,DEBIANVERSION,trixie,g" ${BUILD_ROOT_CACHE}/etc/apt/sources.list
+  elif [ "${2}" = "forky" ]; then
+    LANG=C debootstrap --variant=minbase --arch=${BOOTSTRAP_ARCH} ${2} ${BUILD_ROOT_CACHE} http://deb.debian.org/debian/
+    # exit if debootstrap failed for some reason
+    if [ "$?" != "0" ]; then
+      echo ""
+      echo "error while running debootstrap - giving up"
+      echo ""
+      rm -rf ${BUILD_ROOT_CACHE}
+      exit 1
+    fi
+    cp ${WORKDIR}/files/forky-${BOOTSTRAP_ARCH}-sources.list ${BUILD_ROOT_CACHE}/etc/apt/sources.list
+    # parse in the proper debian version
+    sed -i "s,DEBIANVERSION,forky,g" ${BUILD_ROOT_CACHE}/etc/apt/sources.list
   elif [ "${2}" = "sidriscv" ]; then
     LANG=C debootstrap --variant=minbase --arch=${BOOTSTRAP_ARCH} sid ${BUILD_ROOT_CACHE} http://deb.debian.org/debian/
     # exit if debootstrap failed for some reason
